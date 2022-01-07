@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/catto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="318dp"
+        android:layout_height="195dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:contentDescription="cat"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565"
+        app:srcCompat="@drawable/untitled_artwork_2" />
+
+    <ImageView
+        android:id="@+id/piano"
+        android:layout_width="318dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:rotation="150"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/piano" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="318dp"
+        android:layout_height="195dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="cat"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565"
+        app:srcCompat="@drawable/untitled_artwork_1" />
+
+    <ImageView
+        android:id="@+id/acnhlogo"
+        android:layout_width="169dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="176dp"
+        android:adjustViewBounds="true"
+        android:rotation="-20"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:srcCompat="@drawable/acnhlogo" />
+
+    <ImageView
+        android:id="@+id/cattobox"
+        android:layout_width="193dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:srcCompat="@drawable/cattobox" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="118dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="44dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tap on me to play a song nya~"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/cattobox"
+        app:layout_constraintTop_toTopOf="@+id/cattobox"
+        tools:ignore="SmallSp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
